@@ -2,9 +2,11 @@
 public class Board
 {
 	private static Pit[] allPits;
+	private static Storehouse[] allStorehouses;
 	static
 	{
 		allPits = new Pit[12];
+		allStorehouses = new Storehouse[2];
 
 	}
 
@@ -16,7 +18,14 @@ public class Board
 
 	public static Pit getPit(int pitnum)
 	{
+		System.out.println(allPits[0]);
 		return allPits[pitnum];
+	}
+	
+	public static Pit getStorehouse(int storehousenum)
+	{
+		System.out.println(allStorehouses[0]);
+		return allPits[storehousenum];
 	}
 
 }
